@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Assessment</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Your Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Mapbox JS API !-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <!-- Mapbox CSS!-->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+  <div id='map'></div>
+  <div class="map-overlay" id="features">
+    <h2>Airbnb Prices in Barcelona</h2>
+    <div id="pd">
+      <p>Hover over an Airbnb!</p>
+    </div>
+     <!–– Slider goes below––>
+    <div class='session' id='sliderbar'>
+      <h2>Cleanliness rating: <label id='cleanliness_rating'></label>4</h2>
+      <input id='slider' class='row' type='range' min='4' max='10' step='1' value='1' />
+    </div>
+<!–– Radio buttons go below––>
+  <div class='session'>
+  <h2>Host is superhost</h2>
+  <div class='row' id='filters'>
+    <input id='all' type='radio' name='toggle' value='all' checked='checked'>
+    <label for='all'>All</label>
+    <input id='TRUE' type='radio' name='toggle' value='TRUE'>
+    <label for='TRUE'>TRUE</label>
+    <input id='FALSE' type='radio' name='toggle' value='FALSE'>
+    <label for='FALSE'>FAULSE</label>
+  </div>
+  </div>
+</div>  
+ 
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+
+  
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
